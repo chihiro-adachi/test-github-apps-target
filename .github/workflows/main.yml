@@ -11,9 +11,9 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: kintone/rest
-          path: repo-a
-      - uses: actions/checkout@v4
-        with:
-          repository: kintone/rest
-          path: repo-b
+          # path: repo-a
+      # - uses: actions/checkout@v4
+      #   with:
+      #     repository: kintone/rest
+      #     path: repo-b
       - run: ls -la
