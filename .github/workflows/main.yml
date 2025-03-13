@@ -9,10 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          path: main
       - uses: actions/checkout@v4
         with:
           repository: chihiro-adachi/branch-rules
-          path: /tmp/branch-rules
+          path: branch-rules
 
       - run: ls -la
-      - run: ls -la branch-rules
