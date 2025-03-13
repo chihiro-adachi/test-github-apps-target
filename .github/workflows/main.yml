@@ -15,5 +15,5 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: chihiro-adachi/branch-rules
-          path: repo-b
+          #path: repo-b
       - run: ls -la
