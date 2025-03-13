@@ -10,10 +10,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          repository: kintone/rest
-          # path: repo-a
-      # - uses: actions/checkout@v4
-      #   with:
-      #     repository: kintone/rest
-      #     path: repo-b
+          repository: chihiro-adachi/branch-rules
+          path: repo-a
+      - uses: actions/checkout@v4
+        with:
+          repository: chihiro-adachi/branch-rules
+          path: repo-b
       - run: ls -la
