@@ -1,0 +1,14 @@
+name: flag-test
+on:
+  workflow_dispatch:
+    inputs:
+      flag:
+        type: boolean
+        default: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    if: ${{ inputs.flag == true }}
+    steps:
+      - run: echo 123;
